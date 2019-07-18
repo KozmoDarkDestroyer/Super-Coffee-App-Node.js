@@ -1,0 +1,17 @@
+
+/*
+CREATE TABLE users
+(
+    id_users INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `name_users` VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    password VARCHAR(150) NOT NULL,
+    `img_users` VARCHAR(150),
+    role ENUM('USER_ROLE','ADMIN_ROLE') NOT NULL,
+    `status_users` TINYINT(1) NOT NULL DEFAULT 1,
+    google TINYINT(1) DEFAULT 0,
+    `create_at_users` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `update_at_users` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    UNIQUE(email)
+);
+*/
