@@ -23,6 +23,16 @@ let assignmentUserPut = ( body ) =>{
     return model;
 }
 
+let assignmentUserImage = ( body ) =>{
+    let model = {
+        name_users: body.name_users,
+        img_users: body.img_users,
+        role: body.role,
+        status_users: body.status_users
+    }
+    return model;
+}
+
 let assignmentProducts= ( body ) =>{
     let model = {
         name_products: body.name_products,
@@ -31,6 +41,19 @@ let assignmentProducts= ( body ) =>{
         id_categories: body.id_categories,
         price_uni_products: body.price_uni_products,
         available_products: body.available_products
+    }
+    return model;
+}
+
+let assignmentProductsImage = ( body ) => {
+    let model = {
+        name_products: body.name_products,
+        description_products: body.description_products,
+        id_users: body.id_users,
+        id_categories: body.id_categories,
+        price_uni_products: body.price_uni_products,
+        available_products: body.available_products,
+        img_products: body.img_products
     }
     return model;
 }
@@ -47,5 +70,7 @@ module.exports = {
     assignmentUserPost,
     assignmentUserPut,
     assignmentProducts,
-    assignmentCategories
+    assignmentCategories,
+    assignmentProductsImage,
+    assignmentUserImage
 }
